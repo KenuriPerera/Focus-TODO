@@ -4,14 +4,13 @@ Focus-TODO is a task management and productivity application developed using Kot
 
 Features
 
-Add new tasks with titles and optional descriptions.
+1.Add new tasks with titles and optional descriptions.
 
-View and manage a list of tasks.
+2.View and manage a list of tasks.
 
-Mark tasks as completed or delete them.
+3.Mark tasks as completed or delete them.
 
-Lightweight data storage using SharedPreferences.
+4.Lightweight data storage using SharedPreferences.
 
-Intuitive and clean user interface.
+5.Intuitive and clean user interface.
 
-Real-time updates with minimal resource usage.
