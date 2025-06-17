@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer">
+
+    <!-- Start Button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="      Timer"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="Start"
+            android:textColor="#070707"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="Stop"
+            android:textColor="#0F0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="Reset"
+            android:textColor="#181717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="Go Back"
+            android:textColor="#181717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/taskdone" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

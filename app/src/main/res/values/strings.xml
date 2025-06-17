@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Focus-TODO</string>
+    <string name="add_task">Add Task</string>
+    <string name="timer">Timer</string>
+    <string name="set_reminder_time_in_seconds">Set Reminder Time (in seconds)</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="task_list">Task List:</string>
+</resources>

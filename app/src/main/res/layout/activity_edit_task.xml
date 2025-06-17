@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Edit Task Heading -->
+        <TextView
+            android:id="@+id/editTaskHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Edit Task"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Task Details -->
+
+        <TextView
+            android:id="@+id/taskDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Task Details:"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:id="@+id/editTask"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:hint="Enter Task Details"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:minHeight="48dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Save Task"
+            android:backgroundTint="@color/primary"
+            android:textColor="@android:color/white" />
+
+        <!-- Optional: Additional Layout Elements, if needed -->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="463dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/addtask" />
+
+</RelativeLayout>

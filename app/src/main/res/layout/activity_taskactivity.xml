@@ -1,0 +1,158 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Taskactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Task Name and Description -->
+
+        <TextView
+            android:id="@+id/addNoteHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Add New Day Task"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Name:"
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:id="@+id/editTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/addNoteHeading"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif"
+            android:hint="Enter Task Title"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/taskdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Description:"
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:id="@+id/editTaskDesc"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:hint="Enter Task Description"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:minHeight="48dp"/>
+
+        <!-- Date and Time Pickers -->
+        <TextView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:text="Select Date"
+            android:textColor="#070707"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taskTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/selectTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:text="Select Time"
+            android:textColor="#040303"
+            android:textStyle="bold" />
+
+        <!-- Task List -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/newtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="Add Task"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/gonext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="My Schedule "
+            android:textColor="#070707"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taskListTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/task_list"
+            android:textColor="#0F0E0E"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Floating Action Button -->
+        <ListView
+            android:id="@+id/taskListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/addtask" />
+    </LinearLayout>
+
+</RelativeLayout>

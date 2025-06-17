@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayTask">
+
+    <!-- List of all Tasks -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Task List Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task List"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Task ListView -->
+
+        <!-- Navigate to TaskActivity Button -->
+        <ListView
+            android:id="@+id/taskListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" >
+
+
+        </ListView>
+
+        <Button
+            android:id="@+id/goToTaskActivityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_task"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Navigate to Timer Page Button -->
+        <Button
+            android:id="@+id/goToTimerPageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="322dp"
+            android:layout_height="608dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="177dp"
+            app:srcCompat="@drawable/firstpage" />
+    </LinearLayout>
+
+</RelativeLayout>
