@@ -1,0 +1,1 @@
+The Focus-TODO app is a task management and productivity application developed using Kotlin in Android Studio. It is designed to help users create, manage, and stay on top of their daily tasks and reminders.
